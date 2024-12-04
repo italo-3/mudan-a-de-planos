@@ -1,127 +1,168 @@
+/* ----------------------------- Importação de Fontes ----------------------------- */
 /* Importação da fonte Poppins do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Reset CSS: Remove padding, margin e define box-sizing */
+/* ----------------------------- Reset CSS ----------------------------- */
+/* Remove padding e margin padrão e define o box-sizing como border-box */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Paleta de Cores Natalina */
+/* ----------------------------- Paleta de Cores ----------------------------- */
+/* Definição das cores principais utilizadas no tema */
 :root {
+<<<<<<< Updated upstream
     --vermelho: #fa5671;
     --branco: #ebebeb;
     --azul-medio: #FEA7FB;
     --azul-escuro: #6DF3EA;
     --preto: #2c2c2e;
+=======
+    --rosa: #4b5a79; /* Rosa para destaques */
+    --cinza: #ebebeb; /* Cinza claro para fundo */
+    --amarelo: #f7fb30; /* Amarelo vibrante para botões */
+    --azul-neon: #6df3ea; /* Azul neon para elementos destacados */
+    --preto: #2c2c2e; /* Preto para texto e contrastes */
+    --azul-escuro: #4b5a79; /* Azul escuro para textos e títulos */
+    --azul-medio: #4985A6; /* Azul médio para botões e links */
+    --vermelho: #4985A6;
+    --azul-claro: #89A8B2;
+>>>>>>> Stashed changes
 }
 
-/* Geral */
+/* ----------------------------- Estilo Geral ----------------------------- */
+/* Estilo padrão para o corpo da página */
 body {
-    font-family: 'Poppins', sans-serif; /* Fonte padrão */
-    font-size: 16px; /* Tamanho base da fonte */
-    color: var(--azul-escuro); /* Cor padrão do texto */
-    background-color: var(--branco); /* Fundo branco */
-    line-height: 1.6; /* Altura de linha */
+    font-family: 'Poppins', sans-serif; /* Define a fonte Poppins como padrão */
+    font-size: 16px; /* Define o tamanho base da fonte */
+    color: var(--azul-escuro); /* Define a cor padrão do texto */
+    background-color: var(--cinza); /* Define o fundo da página */
+    line-height: 1.6; /* Define a altura das linhas para maior legibilidade */
 }
 
-/* Links */
+/* ----------------------------- Links ----------------------------- */
+/* Estilo padrão para links */
 a {
-    color: var(--azul-medio); /* Azul médio para links */
-    text-decoration: none;
+    color: var(--azul-escuro); /* Define a cor rosa para links */
+    text-decoration: none; /* Remove o sublinhado padrão */
 }
 a:hover {
-    color: var(--vermelho); /* Vermelho no hover */
+    color: var(--azul-claro); /* Define a cor no hover (adapte a variável caso necessário) */
 }
 
-/* Cabeçalhos */
+/* ----------------------------- Cabeçalhos ----------------------------- */
+/* Estilo geral para todos os níveis de cabeçalhos */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    color: var(--azul-escuro); /* Azul escuro para títulos */
-    margin-bottom: 15px;
+    font-weight: 600; /* Define o peso da fonte */
+    color: var(--azul-escuro); /* Define a cor azul escuro para títulos */
+    margin-bottom: 15px; /* Adiciona espaçamento inferior */
 }
 h2 {
-    color: var(--azul-medio); /* Azul médio para subtítulos */
+    color: var(--azul-medio); /* Define cor específica para subtítulos */
 }
 
-/* Parágrafos */
+/* ----------------------------- Parágrafos ----------------------------- */
+/* Estilo padrão para parágrafos */
 p {
-    margin-bottom: 15px;
-    color: var(--azul-escuro); /* Azul escuro padrão */
+    margin-bottom: 15px; /* Adiciona espaçamento inferior */
+    color: var(--azul-escuro); /* Define a cor azul escuro padrão */
 }
 
-/* Cartões */
+/* ----------------------------- Cartões ----------------------------- */
+/* Estilo para os títulos e textos dentro de cartões */
 .card-title {
-    color: var(--azul-escuro); /* Títulos dos cartões em azul escuro */
+    color: var(--azul-escuro); /* Define cor azul escuro para títulos */
 }
 .card-text {
-    color: var(--vermelho); /* Texto dos cartões em vermelho */
+    color: var(--azul-escuro); /* Define cor rosa para textos */
 }
 
-/* Botões */
+/* ----------------------------- Botões ----------------------------- */
+/* Estilo padrão para botões */
 button {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    background-color: var(--vermelho); /* Fundo vermelho */
-    color: var(--branco); /* Texto branco */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+    font-family: 'Poppins', sans-serif; /* Define a fonte do botão */
+    font-size: 16px; /* Define o tamanho da fonte */
+    border: none; /* Remove bordas */
+    padding: 10px 20px; /* Define o espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
 }
 button:hover {
     background-color: var(--azul-medio); /* Fundo azul médio no hover */
 }
 
-/* Navegação */
+/* ----------------------------- Navegação ----------------------------- */
+/* Estilo para a barra de navegação */
 .navbar {
-    background-color: var(--preto); /* Fundo preto */
-}
-.navbar .nav-link:hover {
-    color: var(--vermelho); /* Links brancos */
-    margin-right: 15px;
+    background-color: var(--azul-escuro); /* Define fundo azul escuro */
 }
 .navbar .nav-link {
-    color: var(--branco); /* Links brancos */
+    color: var(--azul-escuro); /* Define cor rosa para links */
+    margin-right: 15px; /* Adiciona espaçamento lateral */
+}
+.navbar .nav-link:hover {
+    color: var(--azul-medio); /* Destaca links no hover */
     margin-right: 15px;
 }
-.navbar .dropdown-menu {
-    background-color: var(--preto); /* Fundo do dropdown em azul médio */
-}
+
+
+
+.navbar .dropdown-menu /*{
+    background-color:   Fundo azul neon no dropdown
+} */
+
+
+
 .navbar .dropdown-item {
-    color: var(--branco); /* Texto branco no dropdown */
+    color: var(--azul-medio); /* Define cor azul médio para itens */
 }
 .navbar .dropdown-item:hover {
-    color: var(--branco); /* Texto branco no dropdown */
-    background-color: var(--vermelho); /* Fundo vermelho no hover */
+    color: var(--azul-medio); /* Mantém o texto azul médio no hover */
+    background-color: var(--amarelo); /* Fundo amarelo no hover */
 }
 
-/* Rodapé */
+/* ----------------------------- Rodapé ----------------------------- */
+/* Estilo para o rodapé */
 .footer {
-    background-color: var(--preto); /* Fundo preto */
-    color: var(--branco); /* Texto branco */
-    padding: 20px;
-    text-align: center;
+    color: var(--azul-medio); /* Texto branco */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
 }
 .footer-links {
-    color: var(--branco); /* Links no rodapé em branco */
-    text-decoration: none;
+    color: var(--azul-escuro); /* Define cor rosa para links no rodapé */
+    text-decoration: none; /* Remove sublinhado */
 }
 .footer-links:hover {
-    color: var(--vermelho); /* Links no hover em vermelho */
+    color: var(--azul-medio); /* Cor vermelha no hover */
 }
 
-/* Estrutura do container principal */
+/* ----------------------------- Estrutura Principal ----------------------------- */
+/* Estilo para containers */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    width: 100%; /* Define largura máxima */
+    max-width: 1200px; /* Define largura máxima para o container */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 15px; /* Adiciona espaçamento interno lateral */
+    
 }
 
-/* Espaçamento geral */
-.mt-3 { margin-top: 1rem; }
-.mb-3 { margin-bottom: 1rem; }
-.pt-3 { padding-top: 1rem; }
-.pb-3 { padding-bottom: 1rem; }
+/* ----------------------------- Espaçamento ----------------------------- */
+/* Classes utilitárias para margens e espaçamentos */
+.mt-3 { margin-top: 1rem; } /* Margem superior */
+.mb-3 { margin-bottom: 1rem; } /* Margem inferior */
+.pt-3 { padding-top: 1rem; } /* Padding superior */
+.pb-3 { padding-bottom: 1rem; } /* Padding inferior */
+
+
+/* ----------------------------- Botões ----------------------------- */
+.btn-primary {
+    background-color: #f7fb30 !important; /* Sobrescreve o botão primário */
+    border-color: #f7fb30 !important;
+    color: #2c2c2e !important;
+}
+
+body {
+    background-color: #ebebeb !important; 
+}
