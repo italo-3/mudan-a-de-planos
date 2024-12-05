@@ -3,4 +3,5 @@ paleta de cores
     --branco: #ebebeb;
     --rosa-carlo: #fae7fb;
     --azul-bebe: #6df3eacd;
+    --amarelo: #f7fb30;
     --preto: #2c2c2e;
