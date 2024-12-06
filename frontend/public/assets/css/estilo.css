@@ -15,18 +15,14 @@
 :root {
     --vermelho: #fa5671;
     --branco: #ebebeb;
-    --azul-medio: #FEA7FB;
-    --azul-escuro: #6DF3EA;
-    --preto: #2c2c2e;
-    --rosa: #4b5a79; /* Rosa para destaques */
+    --azul-medio: #FEA7FB; /* Rosa para destaques */
     --cinza: #ebebeb; /* Cinza claro para fundo */
     --amarelo: #f7fb30; /* Amarelo vibrante para botões */
     --azul-neon: #6df3ea; /* Azul neon para elementos destacados */
     --preto: #2c2c2e; /* Preto para texto e contrastes */
     --azul-escuro: #4b5a79; /* Azul escuro para textos e títulos */
     --azul-medio: #4985A6; /* Azul médio para botões e links */
-    --vermelho: #4985A6;
-    --azul-claro: #89A8B2;
+    --azul-claro: #89A8B2;/* Azul claro para hover */
 }
 
 /* ----------------------------- Estilo Geral ----------------------------- */
@@ -37,6 +33,7 @@ body {
     color: var(--azul-escuro); /* Define a cor padrão do texto */
     background-color: var(--cinza); /* Define o fundo da página */
     line-height: 1.6; /* Define a altura das linhas para maior legibilidade */
+    background-image: url(/frontend/public/img/Desktop\ -\ 1.jpg);
 }
 
 /* ----------------------------- Links ----------------------------- */
