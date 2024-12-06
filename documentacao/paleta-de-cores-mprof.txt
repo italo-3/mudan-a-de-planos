@@ -1,7 +1,25 @@
 paleta de cores 
     --vermelho: #fa5671;
     --branco: #ebebeb;
-    --rosa-carlo: #fae7fb;
+    --rosa-claro: #fae7fb;
     --azul-bebe: #6df3eacd;
     --amarelo: #f7fb30;
     --preto: #2c2c2e;
+
+A cor hexadecimal #fea7fb corresponde ao modelo de cores RGB (Red, Green, Blue), com 254 de vermelho, 167 de verde e 251 de azul.
+No padrão CMYK, essa cor é composta por 0% de ciano, 34.3% de magenta, 1.2% de amarelo e 0.4% de preto. Ela possui um ângulo de matiz de 302.1 graus, uma saturação de 97.8% e uma leveza de 82.6%.
+Para ser mais WebSafe a cor mais próxima é CC99CC
+
+A cor hexadecimal #6df3ea corresponde ao modelo de cores RGB (Red, Green, Blue), com 109 de vermelho, 243 de verde e 234 de azul.
+No padrão CMYK, essa cor é composta por 55.1% de ciano, 0% de magenta, 3.7% de amarelo e 4.7% de preto. Ela possui um ângulo de matiz de 176 graus, uma saturação de 84.8% e uma leveza de 69%.
+Para ser mais WebSafe a cor mais próxima é 66CCCC.
+
+A cor hexadecimal #ebebeb corresponde ao modelo de cores RGB (Red, Green, Blue), com 235 de vermelho, 235 de verde e 235 de azul.
+No padrão CMYK, essa cor é composta por 0% de ciano, 0% de magenta, 0% de amarelo e 7.8% de preto. Ela possui um ângulo de matiz de 0 graus, uma saturação de 0% e uma leveza de 92.2%.
+Para ser mais WebSafe a cor mais próxima é CCCCCC.
+
+A cor hexadecimal #f7fb30 corresponde ao modelo de cores RGB (Red, Green, Blue), com 247 de vermelho, 251 de verde e 48 de azul.
+No padrão CMYK, essa cor é composta por 1.6% de ciano, 0% de magenta, 80.9% de amarelo e 1.6% de preto. Ela possui um ângulo de matiz de 61.2 graus, uma saturação de 96.2% e uma leveza de 58.6%.
+Para ser mais WebSafe a cor mais próxima é CCCC00.
+
+    
