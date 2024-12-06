@@ -162,6 +162,7 @@ button:hover {
 body {
     background-color: #ebebeb !important; 
 }
+
 .btn-danger{
     width: 90px;   /* Largura */
     height: 40px;   /* Altura */
