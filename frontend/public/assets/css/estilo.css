@@ -14,7 +14,7 @@
 /* Definição das cores principais utilizadas no tema */
 :root {
     --vermelho: #fa5671;
-    --branco: #ebebeb;
+    --branco: #ffffff;
     --azul-medio: #FEA7FB; /* Rosa para destaques */
     --cinza: #ebebeb; /* Cinza claro para fundo */
     --amarelo: #f7fb30; /* Amarelo vibrante para botões */
@@ -23,6 +23,7 @@
     --azul-escuro: #4b5a79; /* Azul escuro para textos e títulos */
     --azul-medio: #4985A6; /* Azul médio para botões e links */
     --azul-claro: #89A8B2;/* Azul claro para hover */
+    --azul: #28B2FE;
 }
 
 /* ----------------------------- Estilo Geral ----------------------------- */
@@ -39,7 +40,7 @@ body {
 /* ----------------------------- Links ----------------------------- */
 /* Estilo padrão para links */
 a {
-    color: var(--azul-escuro); /* Define a cor rosa para links */
+    color: var(--azul-escuro); /* Define a cor azul para links */
     text-decoration: none; /* Remove o sublinhado padrão */
 }
 a:hover {
@@ -54,7 +55,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px; /* Adiciona espaçamento inferior */
 }
 h2 {
+    font-family: "Covered By Your Grace", cursive;
     color: var(--azul-medio); /* Define cor específica para subtítulos */
+    font-size: 40px !important;
 }
 
 /* ----------------------------- Parágrafos ----------------------------- */
@@ -180,3 +183,17 @@ body {
     background-color: #5a5e5f;
 }
 
+#lojaNome{
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;             
+    color: var(--branco);  
+    font-size: 50px;  
+    align-self:flex-end;               
+}
+
+#input-group{
+    align-items:self-end !important;
+    justify-content: end !important;
+    justify-items: end !important;
+}
