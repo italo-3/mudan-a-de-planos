@@ -34,7 +34,7 @@ body {
     color: var(--azul-escuro); /* Define a cor padrão do texto */
     background-color: var(--cinza); /* Define o fundo da página */
     line-height: 1.6; /* Define a altura das linhas para maior legibilidade */
-    background-image: url(/frontend/public/img/Desktop\ -\ 1.jpg);
+    background-image: url(/frontend/public/img/imagem\ de\ fundo\ \(2\).png);
 }
 
 /* ----------------------------- Links ----------------------------- */
