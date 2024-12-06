@@ -156,7 +156,27 @@ button:hover {
     border-color: #f7fb30 !important;
     color: #2c2c2e !important;
 }
-
+.btn-primary:hover{
+    background-color: #e4e731 !important;
+}
 body {
     background-color: #ebebeb !important; 
 }
+
+.btn-danger{
+    width: 90px;   /* Largura */
+    height: 40px;   /* Altura */
+    background-color: #6e797c; /* Cor de fundo */
+    color: white;   /* Cor do texto */
+    border: none;   /* Sem borda */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 12px; /* Tamanho da fonte */
+    text-align: center;    /* Alinhamento horizontal */
+    line-height: 50%;     /* Igual à altura do botão para centralizar verticalmente */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+
+}
+.btn-danger:hover {
+    background-color: #5a5e5f;
+}
+
