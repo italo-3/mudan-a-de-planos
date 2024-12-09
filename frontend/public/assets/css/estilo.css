@@ -162,6 +162,13 @@ button:hover {
 .btn-primary:hover{
     background-color: #e4e731 !important;
 }
+.btn-secondary{
+    background-color: #7c6e6e;
+
+}
+.btn-secondary:hover{
+    background-color:#4985A6; ;
+}
 body {
     background-color: #ebebeb !important; 
 }
@@ -169,7 +176,7 @@ body {
 .btn-danger{
     width: 90px;   /* Largura */
     height: 40px;   /* Altura */
-    background-color: #6e797c; /* Cor de fundo */
+    background-color: #7c6e6e; /* Cor de fundo */
     color: white;   /* Cor do texto */
     border: none;   /* Sem borda */
     border-radius: 5px; /* Borda arredondada */
@@ -180,7 +187,7 @@ body {
 
 }
 .btn-danger:hover {
-    background-color: #5a5e5f;
+    background-color: #c92b2b;
 }
 
 #lojaNome{
