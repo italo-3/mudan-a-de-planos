@@ -197,3 +197,141 @@ body {
     justify-content: end !important;
     justify-items: end !important;
 }
+
+
+
+/* Define o layout da categoria PRODUTOS EM DESTAQUE */
+.container {
+    max-width: 1200px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 0 15px; /* Adiciona espaçamento interno */
+}
+
+
+/* Define o layout da grid */ 
+.grid-container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr); /* Quatro colunas na grid */
+    gap: 30px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza o grid horizontalmente */
+    align-items: center; /* Opcional: Alinha os itens verticalmente */
+    margin: 20px auto; /* Centraliza a grid na página */
+    max-width: 1200px; /* Define a largura máxima da grid */
+}
+
+/* Caixa para imagem e descrição */
+.image-box {
+    display: flex;
+    flex-direction: column; /* Organiza imagem e descrição em coluna */
+    width: 300px; /* Largura fixa */
+    height: 600px; /* Altura automática para se ajustar ao conteúdo */
+    border: 1px solid var(--azul-claro); /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que nada exceda os limites */
+    background-color: var(--branco); /* Fundo claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+/* Estilo para a imagem */
+.image-box img {
+    width: 100%; /* Preenche a largura da caixa */
+    height: 100%; /* Altura fixa da imagem */
+    object-fit: contain; /* Garante que a imagem não seja cortada */
+    padding: 10px;
+}
+
+/* Estilo da descrição */
+.image-box .description {
+    height: 100%; /* Preenche a largura da caixa */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+   
+}
+
+.image-box .description h5 {
+    font-size: 18px; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: #333; /* Cor do texto */
+}
+
+.image-box .description p {
+    font-size: 14px; /* Tamanho do texto da descrição */
+    color: #555; /* Cor do texto secundário */
+    margin-bottom: 20px; /* Espaço abaixo do texto */ 
+    box-sizing: border-box;
+}
+.image-box .btn {
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+/* Seção de Novidades */
+.container-2 {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 15px; /* Espaçamento interno */
+}
+
+/* Grid layout NOVIDADES*/
+/* Seção de Novidades */
+.container-2 {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 15px; /* Espaçamento interno */
+}
+
+/* Grid layout NOVIDADES */
+.grid-container-novidades {
+    display: grid; /* Define como grid */
+    grid-template-columns: repeat(3, 1fr); /* Três colunas uniformes */
+    gap: 30px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza o grid horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin: 20px auto; /* Centraliza a grid na página */
+    max-width: 1200px; /* Define a largura máxima da grid */
+}
+
+/* Estilo para os itens do grid */
+.grid-item-novidade {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Imagem da novidade */
+.imagem-novidade {
+    width: 100%; /* Preenche a largura da caixa */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    padding: 10px; /* Adiciona espaçamento */
+}
+
+/* Caixa de descrição */
+.descricao-novidade {
+    padding: 15px; /* Adiciona espaçamento interno */
+}
+
+/* Estilo dos textos */
+.titulo-novidade {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.texto-novidade {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Botão de ação */
+.btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 15px;
+}
