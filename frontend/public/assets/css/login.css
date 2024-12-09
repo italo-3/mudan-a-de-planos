@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #ebebeb;
+    background-image: url(/frontend/public/img/imagem\ de\ fundo\ \(2\).png);
 }
 .login-container {
     display: flex;
