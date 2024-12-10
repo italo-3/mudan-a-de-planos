@@ -342,3 +342,41 @@ body {
     margin-top: 10px;
     font-size: 15px;
 }
+
+/* IMAGEM DAS PGS DE PRODUTOS */
+img.img-fluid {
+    width: 500px; /* Tamanho fixo ou limite */
+    height: auto; /* Mantém proporção */
+    object-fit: cover; /* Evita distorções */
+}
+
+ /* Estilo do dia do livro */
+  /* Estilo da imagem */
+  .img-fluid-Dia {
+    width: 1000px;
+    height: 500px;
+    object-fit: contain;
+}
+
+/* Estilo da seção */
+.special-box {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Botão estilizado */
+.btn-special {
+    background-color: #4985A6;
+    color: white;
+    border: none;
+}
+.btn-special:hover {
+    background-color: #32657a;
+}
+
+#header-diaDoLivro {
+    background-color: #142329; /* Azul claro */
+    color: white;
+}

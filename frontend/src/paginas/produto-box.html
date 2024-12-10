@@ -3,131 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produto - Loja</title>
+    <title>Box Especial</title>
+    <!-- Link do Bootstrap para estilos prontos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para ícones da FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Link para arquivo CSS personalizado -->
     <link rel="stylesheet" href="../../public/assets/css/estilo.css">
 </head>
 <body>
-    <!-- Inclui o Cabeçalho -->
+    <!-- Cabeçalho será carregado externamente -->
     <div id="header"></div>
 
-    <!-- Conteúdo -->
+    <!-- Conteúdo principal -->
     <main class="container my-5">
-        <div class="row">
-            <!-- Imagem do Produto -->
+         <div class="row">
+            <!-- Coluna para a imagem do produto -->
             <div class="col-md-6">
-                <img src="https://via.placeholder.com/500" alt="Produto Exemplo" class="img-fluid">
-                <img src="https://via.placeholder.com/500" alt="Produto Exemplo" class="img-fluid">
+                <!-- Imagem do produto (substituída dinamicamente) -->
+                <img id="produto-imagem" src="/frontend/public/img/box-imagem.png" alt="Produto Exemplo" class="img-fluid">
             </div>
-            <!-- Detalhes do Produto -->
+            <!-- Coluna para os detalhes do produto -->
             <div class="col-md-6">
-                <h2>Novo Box Edição Especial</h2>
-                <p class="text-muted">Coleção Exclusiva</p>
-                <h3 class="text-success">R$ 299,99</h3>
-
-                <p class="mt-4">Este novo box edição especial reúne livros de colecionador com capas diferenciadas e conteúdos exclusivos. Uma oportunidade única de adquirir edições limitadas de grandes clássicos literários.</p>
-
+                <!-- Nome do produto (substituído dinamicamente) -->
+                <h2 id="produto-nome">Box Especial</h2>
+                <!-- Categoria do produto -->
+                <p class="text-muted" id="produto-categoria">Coleções</p>
+                <!-- Preço do produto (substituído dinamicamente) -->
+                <h3 class="text-success" id="produto-preco">R$ 199,99</h3>
+                <!-- Breve descrição do produto -->
+                <p class="mt-4" id="produto-descricao">
+                    Conheça a coleção completa em edição especial. Ideal para fãs e colecionadores.
+                </p>
+                <!-- Lista de características do produto -->
                 <ul>
                     <li><strong>Características:</strong></li>
-                    <li>Material resistente e durável</li>
-                    <li>Embalagem especial para colecionador</li>
-                    <li>Conteúdo exclusivo e bônus de colecionador</li>
+                    <li id="produto-caracteristicas">Material resistente e durável</li>
                     <li>Texto impresso em papel de alta qualidade</li>
-                    <li>Capa dura com acabamento especial</li>
-                    <li>Design moderno e sofisticado</li>
+                    <li>Fonte confortável para leitura prolongada</li>
+                    <li>Capa com acabamento premium</li>
                 </ul>
 
+                <!-- Campo para selecionar a quantidade -->
                 <div class="mt-4">
                     <label for="quantidade" class="form-label">Quantidade</label>
                     <input type="number" id="quantidade" class="form-control" value="1" min="1" max="10">
                 </div>
 
+                <!-- Botão para adicionar ao carrinho -->
                 <button class="btn btn-primary mt-4 w-100">Adicionar ao Carrinho</button>
+                <!-- Botão para comprar agora -->
                 <button class="btn btn-secondary mt-2 w-100">Comprar Agora</button>
             </div>
         </div>
 
-        <!-- Barra de Opções de Box de Livros -->
-        <div class="mt-5">
-            <h4>Escolha seu Box Especial</h4>
-            <div class="btn-group" role="group" aria-label="Opções de Box">
-                <button type="button" class="btn btn-outline-primary" onclick="showBoxOptions('classicos')">Box Clássicos</button>
-                <button type="button" class="btn btn-outline-primary" onclick="showBoxOptions('ficcao')">Box de Ficção Científica</button>
-                <button type="button" class="btn btn-outline-primary" onclick="showBoxOptions('misterio')">Box de Mistério</button>
+        <!-- Seção de opções de box -->
+        <section class="mt-5">
+            <h4>Opções de Box</h4>
+            <div class="d-flex justify-content-around">
+                <!-- Botões para selecionar diferentes opções de box -->
+                <button class="btn btn-outline-primary" onclick="selecionarBox('1984')">Box 1984</button>
+                <button class="btn btn-outline-primary" onclick="selecionarBox('Harry Potter')">Box Harry Potter</button>
+                <button class="btn btn-outline-primary" onclick="selecionarBox('Senhor dos Anéis')">Box Senhor dos Anéis</button>
             </div>
-        </div>
+        </section>
 
-        <!-- Opções de Box -->
-        <div id="boxOptions" class="mt-5">
-            <div id="classicos" class="box-group d-none">
-                <h5>Box Clássicos</h5>
-                <ul>
-                    <li><strong>Box 1: Grandes Clássicos da Literatura</strong> - Inclui obras como "Dom Quixote", "Moby Dick", e "Orgulho e Preconceito".</li>
-                    <li><strong>Box 2: Edições Ilustradas</strong> - Versões ilustradas de clássicos como "Alice no País das Maravilhas" e "O Grande Gatsby".</li>
-                    <li><strong>Box 3: Obras de Shakespeare</strong> - Uma coleção completa das obras de Shakespeare em uma edição especial.</li>
-                </ul>
-            </div>
-
-            <div id="ficcao" class="box-group d-none">
-                <h5>Box de Ficção Científica</h5>
-                <ul>
-                    <li><strong>Box 1: Isaac Asimov</strong> - Inclui os principais livros de Asimov, como "Fundação" e "Eu, Robô".</li>
-                    <li><strong>Box 2: Duna</strong> - A famosa série "Duna" de Frank Herbert, com edições luxuosas.</li>
-                    <li><strong>Box 3: Philip K. Dick</strong> - Coleção das obras mais importantes de Philip K. Dick, incluindo "Androides Sonham com Ovelhas Elétricas".</li>
-                </ul>
-            </div>
-
-            <div id="misterio" class="box-group d-none">
-                <h5>Box de Mistério</h5>
-                <ul>
-                    <li><strong>Box 1: Agatha Christie</strong> - A coleção completa das histórias de Hercule Poirot e Miss Marple.</li>
-                    <li><strong>Box 2: Sherlock Holmes</strong> - Edições luxuosas das aventuras de Sherlock Holmes de Arthur Conan Doyle.</li>
-                    <li><strong>Box 3: Mistérios Modernos</strong> - Inclui bestsellers como "O Código Da Vinci" e "Garota Exemplar".</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Descrição Detalhada -->
+        <!-- Seção de descrição detalhada -->
         <section class="mt-5">
             <h4>Descrição Detalhada</h4>
-            <p>Descrição:
-                O Novo Box Edição Especial é uma coleção única e limitada que traz grandes clássicos da literatura, reunidos em um design exclusivo. Cada box conta com edições especiais, incluindo capas diferenciadas e conteúdo extra para os colecionadores. Ideal para quem busca um item de valor para a estante e um presente perfeito para amantes de livros.
-                
-                Sinopse:
-                Cada box desta edição especial é cuidadosamente montado, oferecendo uma coleção que mistura história, literatura e design. Com um toque de sofisticação, esses boxes garantem não só uma experiência de leitura única, mas também um item de destaque na sua coleção pessoal.
-                
-                Não perca a chance de adquirir essas edições exclusivas e fazer parte de um seleto grupo de colecionadores.
+            <!-- Descrição detalhada (atualizada dinamicamente) -->
+            <p id="descricao-detalhada">
+                Este box especial inclui edições cuidadosamente selecionadas para colecionadores. Cada item é feito com materiais de alta qualidade e design moderno.
             </p>
         </section>
 
-        <!-- Avaliações -->
+        <!-- Seção de avaliações -->
         <section class="mt-5">
             <h4>Avaliações</h4>
             <p>Não há avaliações para este produto ainda. Seja o primeiro a avaliar!</p>
+            <!-- Botão para deixar uma avaliação -->
             <button class="btn btn-outline-primary">Deixar uma Avaliação</button>
         </section>
     </main>
 
-    <!-- Inclui o Rodapé -->
+    <!-- Rodapé será carregado externamente -->
     <div id="footer"></div>
 
-    <!-- Scripts do Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Scripts de Exibição das Opções de Box -->
-    <script>
-        function showBoxOptions(boxType) {
-            // Esconde todas as opções de box
-            const boxes = document.querySelectorAll('.box-group');
-            boxes.forEach(box => box.classList.add('d-none'));
-
-            // Exibe a opção de box selecionada
-            const selectedBox = document.getElementById(boxType);
-            if (selectedBox) {
-                selectedBox.classList.remove('d-none');
-            }
-        }
-    </script>
+    <!-- Script para controle dinâmico dos dados -->
+<script src="/frontend/public/assets/js/scriptsProdutos.js"></script>
 </body>
 </html>
