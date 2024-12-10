@@ -41,50 +41,48 @@
         </section>
 
         <!-- Seção de Produtos em Destaque -->
-        <section id="productsSection" class="my-5">
+        <section id="productsSection" class="container">
             <h2 class="text-center mb-4">Produtos em Destaque</h2>
-            <div class="row" id="productsList">
+            <div class="grid-container">
                 <!-- Os produtos serão adicionados dinamicamente aqui -->
                 <!-- Exemplo de produto estático -->
-                <div class="col-md-3">
-                    <div class="card">
+                <div class="grid-item">
+                    <div class="image-box">
                         <img src="/frontend/public/img/image 2 (1).jpg" class="Batman o longo dia das bruxas" alt="Produto 1" style="height: 300px;">
-                        <div class="card-body">
+                        <div  class="description">
                             <h5 class="card-title">Batman o Longo Dia Das Bruxas</h5>
                             <p class="card-text">Batman: Ano Um, esta obra mostra uma série de assassinatos ocorridos em datas festivas e sempre relacionados ao submundo dos gângsteres de Gotham City.</p>
-                            <a href="../src/paginas/produto4.html" class="btn btn-primary">Ver Produto</a>
+                            <a href="/frontend/src/paginas/produto4.html" class="btn btn-primary">Ver Produto</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="./img/1984.jpg" class="1984" alt="Produto 2" style="height: 300px;">
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
+                <div class="grid-item">
+                    <div class="image-box">
+                        <img src="/frontend/public/img/1984.jpg" class="1984" alt="Produto 2" style="height: 300px;">
+                        <div  class="description">
+                            <h5 class="card-title">1984</h5>
                             <p class="card-text">1984, se passa em uma sociedade distópica controlada pelo Partido e o Big Brother. Um membro começa a questionar o regime opressor enquanto luta pela liberdade de pensamento.</p>
-                        </p>
-                            <a href="../src/paginas/produto3.html" class="btn btn-primary">Ver Produto</a>
+                            <a href="/frontend/src/paginas/produto3.html"class="btn btn-primary">Ver Produto</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
+                <div class="grid-item">
+                    <div class="image-box">
                         <img src="/frontend/public/img/heartstopper-img-2.jpg" class="Heartstopper dois garotos, um encontro (vol. 1)" alt="Produto 3" style="height: 300px;">
-                        <div class="card-body">
+                        <div  class="description">
                             <h5 class="card-title">Heartstopper dois garotos, um encontro (vol. 1)</h5>
-                            <p class="card-text">Dois garotos passam a sentar um ao lado do outro toda manhã, uma amizade intensa se desenvolve, e eles ficam cada vez mais próximos.</p>
-                            <a href="../src/paginas/produto2.html" class="btn btn-primary">Ver Produto</a>
+                            <p class="card-text">Dois garotos passam a sentar um ao lado do outro toda manhã, uma amizade intensa se desenvolve, e eles ficam cada vez mais próximos.</p><br>
+                            <a href="/frontend/src/paginas/produto2.html" class="btn btn-primary">Ver Produto</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
+                <div class="grid-item">
+                    <div class="image-box">
                         <img src="/frontend/public/img/diarioDeUmBanana-img2.jpg" class="Diário de um Banana 4 " alt="Produto 4" style="height: 300px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Diário de um Banana 4</h5>
-                            <p class="card-text">O livro: Diário de um Banana fala sobre a vida do Greg, sempre da quase tudo errado com ele, ele tenta impressionar uma menina que ele gosta e quando tem a chance de falar com ela acontecem coisas constrangedoras.</p>
-                            <a href="../src/paginas/produto.html" class="btn btn-primary">Ver Produto</a>
-                            
+                        <div  class="description">
+                            <h5 class="card-title">Diário de um Banana</h5>
+                            <p>Um garoto que enfrenta diversos desafios na adolescência. Ele tenta impressionar uma menina, mas sempre acaba em situações embaraçosas.</p><br>
+                            <a href="/frontend/src/paginas/produto.html" class="btn btn-primary">Ver Produto</a>
                         </div>
                     </div>
                 </div>
@@ -107,42 +105,42 @@
             </div>
         </section>
 
-        <!-- Seção de Novidades -->
-        <section id="newsSection" class="my-5">
-            <h2 class="text-center mb-4">Novidades</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/frontend/public/img/jogosVorazes-2.webp" class="card-img-top" alt="Notícia 1" style="height: 400px;">
-                        <div class="card-body">
-                            <h5 class="card-title">uma novo box edição especial para fãs </h5>
-                            <p class="card-text">Confira as novidades em nossa loja para este mês!</p>
-                            <a href="/frontend/src/paginas/produto-box.html" class="btn btn-primary">Leia Mais</a>
+      <!-- Seção de Novidades -->
+      <section id="newsSection" class="container-2">
+        <h2 class="titulo-novidades text-center mb-4">Novidades</h2>
+        <div class="grid-container-novidades">
+            <div class="grid-item-novidade">
+                <div class="image-box-novidade">
+                    <img src="/frontend/public/img/box.png" class="imagem-novidade" alt="Notícia 1">
+                    <div class="descricao-novidade">
+                        <h5 class="titulo-novidade">Novo box edição especial</h5>
+                        <p class="texto-novidade">Confira as novidades em nossa loja para este mês!</p>
+                        <a href="/frontend/src/paginas/produto-box.html" class="btn btn-primary">Leia Mais</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/frontend/public/img/VErmelho-img2.jpg" class="card-img-top" alt="Notícia 2" style="height: 400px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Promoções Imperdíveis</h5>
-                            <p class="card-text">Aproveite os descontos incríveis em vários produtos.</p>
-                            <a href="../../frontend/src/paginas/promoçoes.html" class="btn btn-primary">Leia Mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/frontend/public/img/naruto-2.webp" class="card-img-top" alt="Notícia 3" style="height: 400px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Novos Serviços Disponíveis</h5>
-                            <p class="card-text">estamos com novo serviços de assinatura de e-book.</p>
-                            <a href="../src/paginas/promoçoes.html" class="btn btn-primary">Leia Mais</a>
-                        </div>
+            <div class="grid-item-novidade">
+                <div class="image-box-novidade">
+                    <img src="/frontend/public/img/PROMOÇÕES.png" class="imagem-novidade" alt="Notícia 2">
+                    <div class="descricao-novidade">
+                        <h5 class="titulo-novidade">Promoções Imperdíveis</h5>
+                        <p class="texto-novidade">Aproveite os descontos incríveis em vários produtos.</p>
+                        <a href="/frontend/src/paginas/produtos-diaDoLivro.html" class="btn btn-primary">Leia Mais</a>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="grid-item-novidade">
+                <div class="image-box-novidade">
+                    <img src="/frontend/public/img/ebook.jpg" class="imagem-novidade" alt="Notícia 3">
+                    <div class="descricao-novidade">
+                        <h5 class="titulo-novidade">Novos Serviços</h5>
+                        <p class="texto-novidade">Estamos com novos serviços de assinatura de e-book.</p>
+                        <a href="/frontend/src/paginas/servicos.html" class="btn btn-primary">Leia Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 
     <!-- Inclui o Rodapé -->

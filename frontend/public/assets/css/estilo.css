@@ -199,12 +199,10 @@ body {
     align-self:flex-end;               
 }
 
-#input-group{
-    align-items:self-end !important;
+/*#input-group{
     justify-content: end !important;
     justify-items: end !important;
-}
-
+}*/
 
 
 /* Define o layout da categoria PRODUTOS EM DESTAQUE */
@@ -356,6 +354,7 @@ img.img-fluid {
     width: 1000px;
     height: 500px;
     object-fit: contain;
+    padding-bottom: 30px;
 }
 
 /* Estilo da seção */
@@ -368,15 +367,22 @@ img.img-fluid {
 
 /* Botão estilizado */
 .btn-special {
-    background-color: #4985A6;
-    color: white;
+    background-color: var(--amarelo);
+    color: black;
     border: none;
+    font-size: 20px;
 }
 .btn-special:hover {
-    background-color: #32657a;
+    background-color: var(--azul-neon);
 }
 
 #header-diaDoLivro {
-    background-color: #142329; /* Azul claro */
+    background-color: var(--azul); /* Azul claro */
     color: white;
 }
+
+
+
+
+
+
