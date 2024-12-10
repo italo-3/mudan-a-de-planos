@@ -2,8 +2,8 @@ const mysql = require('mysql');
 
 const connection = mysql.createConnection({
     host:'localhost',
-    port:'3006',
+    port:'3007',
     user: 'root',
-    password:'',
-    database:'db_loja_infocel',
+    password:'senac',
+    database:'db_cantinho_do_nerd',
 });
